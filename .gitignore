@@ -1,0 +1,9 @@
+# Fitxers que genera Maven o l'IDE: no es pugen
+target/
+out/
+.idea/
+*.iml
+.vscode/
+
+# Fitxers que creen els exemples en executar-se
+sortida/
