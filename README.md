@@ -23,6 +23,20 @@ Cada sessió té el seu paquet dins de `src/main/java/cat/pratfp/servihub/`.
 | 1 | `sessio1` | ServiHub v0: el primer procés fill | `App` |
 | 2 | `sessio2` | Llançar i controlar subprocessos amb ProcessBuilder | `Ex1ProcessosDelSistema` · `Ex2LlancaIEspera` · `Ex3SortidaIError` · `Ex4TempsMaxim` · `Ex5EntornIFitxers` · `Ex6TasquesEnParallel` · auxiliars `Jvm`, `Tasca`, `Mostrador` |
 
+## RA2 · Fils (programació multifil)
+
+Exemples del document **«Teoria del RA2 · Fils d'execució, explicada fàcil»**, dins de
+`src/main/java/cat/pratfp/servihub/ra2/`.
+
+| Paquet | Per a què | Classes |
+|---|---|---|
+| `ra2.teoria` | Els exemples de cada apartat de la teoria | `HolaFils` · `FilAmbHerencia` · `EstatsDUnFil` · `Vigilant` · `Prioritats` · `ComptadorSegur` · `ComptadorAtomic` · `ComptadorAmbLock` · `Interruptor` · `CuaProductorConsumidor` · `PiscinaDeFils` · `FilsVirtuals` |
+| `ra2.cursa` | Exemple 1 · La cursa de repartidors (programa de partida de les ampliacions) | `Cursa` · `Repartidor` |
+| `ra2.comandes` | Exemple 2 · Les comandes de ServiHub (programa de partida de les ampliacions) | `Comandes` · `Comptador` |
+
+Les ampliacions dels exemples 1 i 2 les fas tu: crea una classe nova per a cada ampliació dins del mateix paquet
+(per exemple `A3_CursaAmbJoin`) i deixa el programa de partida sense tocar.
+
 ## Estructura
 
 ```
@@ -30,7 +44,11 @@ Cada sessió té el seu paquet dins de `src/main/java/cat/pratfp/servihub/`.
 ├── pom.xml
 └── src/main/java/cat/pratfp/servihub/
     ├── sessio1/           ← un paquet per sessió
-    └── sessio2/
+    ├── sessio2/
+    └── ra2/               ← exemples del RA2 (fils)
+        ├── teoria/
+        ├── cursa/
+        └── comandes/
 ```
 
 La carpeta `sortida/` la crea l'exemple 5 en executar-se i no es puja al repositori.
